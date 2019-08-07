@@ -13,7 +13,7 @@ let money, time,
     expensesItemsHTML = document.getElementsByClassName("expenses-item"),
     approve1HTML = document.getElementsByTagName("button")[0],
     approve2HTML = document.getElementsByTagName("button")[1],
-    calculateHTML = document.getElementsByTagName("button")[3],
+    calculateHTML = document.getElementsByTagName("button")[2],
     optionalExpensesHTML = document.querySelectorAll(".optionalexpenses .optionalexpenses-item"),
     countBudgetHTML = document.querySelector(".count-budget"),
     chooseIncomeLabelHTML = document.querySelector(".choose-income-label"),
@@ -82,13 +82,13 @@ var appData = {
     },
     detectLevel: function() {
         if(appData.moneyPerDay <= 100) {
-            appData.WealthLevel = "low"
+            appData.WealthLevel = "low";
         } else if (appData.moneyPerDay <= 2000 && appData.moneyPerDay > 100) {
-            appData.WealthLevel = "average"
+            appData.WealthLevel = "average";
         } else if (appData.moneyPerDay > 2000) {
-            appData.WealthLevel = "high"
+            appData.WealthLevel = "high";
         } else {
-            alert("Something went wrong")
+            alert("Something went wrong");
         }
     
         alert(" Your wealth level is: " + appData.WealthLevel);
