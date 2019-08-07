@@ -22,9 +22,9 @@ let money, time,
     chooseSumHTML = document.querySelector(".choose-sum"),
     percentHTML = document.querySelector(".percent"),
     choosePercentHTML = document.querySelector(".choose-percent"),
-    yearHTML = document.querySelector(".time-data .year"),
-    monthHTML = document.querySelector(".time-data .month"),
-    dayHTML = document.querySelector(".time-data .day");
+    yearHTML = document.querySelector(".time-data .year .year-value"),
+    monthHTML = document.querySelector(".time-data .month . month-value"),
+    dayHTML = document.querySelector(".time-data .day .day-value");
 
 function start() {
     money = +prompt("Your monthly budget?", "1000");
